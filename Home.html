@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+
+</head>
+
+<style>
+*{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;
+}
+.hero{
+height: 100vh;
+width: 100%;
+background-image: url(aribg.jpg);
+background-size: cover;
+background-position: center;
+}
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 45px;
+padding-left: 8%;
+padding-right: 8%;
+}
+.logo{
+width:300px;
+cursor: pointer;
+}
+span{
+color: #f9004d
+}
+nav ul li{
+list-style: none;
+display: inline-block;
+padding: 10px 25px;
+}
+nav ul li a{
+color: white;
+text-decoration: none;
+font-weight: bold;
+text-transform: capitalize;
+}
+nav ul li a: hover{
+color: #af9004d;
+transition: .4s;
+}
+.btn{
+background-color: #af9004d;
+color: black;
+text-decoration: none;
+border: 2px solid transparent;
+font-weight: bold;
+padding: 10px 25px;
+border-radius: 30px;
+transition: transform .4s;
+}
+.btn:hover{
+transform: scale (1.2);
+}
+.content{
+position: absolute;
+top: 50%;
+left: 8%;
+transform: translateY(-50);
+}
+h1{
+color: black;
+margin: 20px 0px 20px;
+font-size: 75px;
+}
+h3{
+color: black;
+font-size: 25px;
+margin-bottom: 50px;
+}
+h4{
+color: black;
+letter-spacing: 2px;
+font-size: 20px;
+}
+.newslatter form{
+width: 380px;
+max-width: 100%;
+position: relative;
+}
+.newslatter form input:first-child{
+display: inline-block;
+width: 100%;
+padding: 14px 130px 14px 15px;
+border: 2px solid #f9004d;
+outline: none;
+border-status: 30px;
+}
+.newslatter form input:last-child{
+position: absolute;
+display: inline-block;
+outline: none;
+border: none;
+padding: 10px 30px;
+border-radius: 30px;
+background-color: #f9004d;
+color: white;
+box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+top: 6px;
+right: 6px;
+}
+.about{
+width: 100%;
+padding: 100px 0px;
+background-image: url(bgko.jpg);
+}
+.about img{
+height: auto;
+width: 430px;
+}
+.about-text{
+width: 550px;
+}
+.main{
+width: 1130px;
+max-width: 95%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.about-text h2{
+color: purple;
+font-family: Vivaldi;
+font-size: 75px;
+line-height: 2;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+.about-text h4{
+color: black;
+font-family: vivaldi;
+letter-spacing: 2px;
+font-size: 22px;
+margin-bottom: 25px;
+text-transform: capitalize;
+}
+.about-text p{
+color: black;
+font-family: Vivaldi;
+letter-spacing: 1px;
+line-height: 1;
+font-size: 40px;
+margin-bottom: 45px;
+}
+button{
+background-color: #B5B9FF;
+color: white;
+text-decoration: none;
+border: 1px solid transparent;
+font-weight: bold;
+padding: 10px 10px;
+border- radius: 10px;
+transition: .4s;
+}
+button:hover{
+background-color: transparent;
+border: 2px solid #B5B9FF;
+cursor: pointer;
+}
+.Others{
+background-image: url(bgko.jpg);
+width: 100%;
+padding:100px 0px;
+}
+.title{
+color: black;
+font-size: 75px;
+width: 1130px;
+margin: 30px auto;
+text-align: center;
+}
+.box{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 400px;
+}
+.card{
+height: 365px;
+width: 335px;
+padding: 20px 30px;
+background: #DCD3FF;
+border-radius: 20px;
+margin: 15px;
+position: relative;
+overflow: hidden;
+text-align: center;
+}
+.card i{
+font-size: 50px;
+display: block;
+text-align: center;
+margin: 25px 0px;
+color: #B5B9FF;
+}
+h2{
+color: #7d007d;
+font-family: vivaldi;
+font-size: 100px;
+margin-bottom: 15px;
+}
+.pra p{
+color: #000;
+font-size: 20px;
+line-height: 27px;
+margin-bottom: 20px;
+}
+.card .button{
+background-color: #B5B9FF;
+color: white;
+text-decoration: none;
+border: 1px solid transparent;
+font-weight: bold;
+padding: 10px 10px;
+border- radius: 10px;
+transition: .4s;
+}
+.card .button:hover{
+background-color: transparent;
+border: 2px solid #B5B9FF;
+cursor: pointer;
+}
+.social-liks{
+transform: rotate(-90deg);
+position: absolute;
+left: -80px;
+bottom: 180px;
+}
+.social-liks a{
+text-decoration: none;
+color: #6a7199;
+padding-right: 20px;
+font-size: 14px;
+}
+</style>
+
+
+
+
+<body>
+<div class="hero">
+<nav>
+<img src="logo2.jpg" class="logo">
+<ul>
+<li><a href="#home">Home</a></li>
+	<li><a href="#aboutme">About Me</a></li>
+	<li><a href="#others">Others</a></li>
+</ul>
+<a href="" class="btn">Enjoy</a>
+</nav>
+
+<div id="home" class="content">
+<h4>Hello, my name is</h4>
+<h1>Queen <span>Angela</span></h1>
+<h3>I'am just a college student</h3>
+<div class="newslatter">
+<form>
+<input type"name" name="name" id="name" placeholder="Enter your name">
+<input type="submit" name="submit" value="Welcome">
+</form>
+</div>
+</div>
+</div>
+
+<section class="about">
+<div id="aboutme" class="main">
+	<img src="ari.jpg">
+	<div class="about-text">
+	<h2> About Me</h2>
+	<h4> Working Student</h4>
+	<p> First and foremost, there is nothing interesting about me. I have no talent and skills in life, I don't even know why am I still existing.
+	But all I know is that I'm addicted to Ariana Grande, that explains why she is my theme in this web page even tho it should be about me. But don't
+	you worry, all the details here is about me. Hi! I'am Queen Angela Francisco born on August 3,2002, 20 year of age currently living at the city of Antipolo Half time student,
+	full time zombie, just kidding! I'am also a part timer at McDonalds Estland Heights here in Cogeo and currently studying at ICCT Colleges Cainta.
+	I'am a in second year College taking BS-IT section OLCA211A031. Even tho studying while working is hard I still manage to do both
+	You really will do anything to reach your goals in life at this stage. I hope you don't get bored!
+
+
+<button type="button">Thank U Next</button>	
+</div>
+</div>
+</section>
+
+<div id="others" class="Others">
+<div class="title">
+<h2>What to Know<h2/>
+</div>
+
+<div class="box">
+<div class="card">
+<i class="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"></i>
+<h4>My music genre</h4>
+<div class="pra">
+<p>These are the artist that I look up the most. Ariana Grande. The Weeknd. Olivia Rodrigo. Taylor Swift. Adele. Charlie Puth. Maroon 5. etc.</p>
+
+<p style="text-align: center;">
+<a class="button" href="#">Read More</a>
+</p>
+</div>
+</div>
+
+<div class="box">
+<div class="card">
+<i class="fa-solid fa-popcorn"></i>
+<h4>My Hobby</h4>
+<div class="pra">
+<p>Actually I really don't have many hobby, I always spend my time by watching movies, series and vlogs on youtube. I can't do more than that because I'm always busy because of my work.</p>
+
+<p style="text-align: center;">
+<a class="button" href="#">Read More</a>
+</p>
+</div>
+</div>
+
+<div class="box">
+<div class="card">
+<i class="fa-regular fa-bullseye-arrow"></i>
+<h4>My Goal</h4>
+<div class="pra">
+<p>My Goal in life is to be a wealthy women. I want to be the type of person that " I want it, I got it". So I'm really doing my best to pursue that goal.</p>
+
+<p style="text-align: center;">
+<a class="button" href="#">Read More</a>
+</p>
+</div>
+</div>
+
+<div class="social-liks">
+<a href="https://www.facebook.com/HisAngel.fries/">FACEBOOK</a>
+<a href="https://www.instagram.com/queenangela___/">INSTAGRAM</a>
+<a href="https://www.tiktok.com/@franciscoqueenang?lang=en">TIKTOK</a>
+</div>
+</div>
+
+
+
+</body>
+</html>
